@@ -4,7 +4,7 @@
     "keywords": ["twitter", "time ago"],
     "type": "library",
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=5.4",
         "nesbot/carbon": "~1.18"
     },
     "require-dev": {
