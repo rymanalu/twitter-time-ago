@@ -70,7 +70,7 @@ class TwitterTimeAgo
             return (string) new Parser($this->freshCarbon($parameters[0]), $this->timezone);
         }
 
-        $className = static::class;
+        $className = get_called_class();
 
         throw new BadMethodCallException("Call to undefined method {$className}::{$method}()");
     }
