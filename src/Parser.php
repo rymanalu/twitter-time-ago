@@ -52,7 +52,7 @@ class Parser
             return $this->time->format('j M y');
         }
 
-        if ($this->isMoreThanSixDays()) {
+        if ($this->isMoreThanAWeek()) {
             return $this->time->format('j M');
         }
 
@@ -102,13 +102,13 @@ class Parser
     }
 
     /**
-     * Determine if the difference is more than 6 days.
+     * Determine if the difference is more than a week.
      *
      * @return bool
      */
-    protected function isMoreThanSixDays()
+    protected function isMoreThanAWeek()
     {
-        return $this->diffInSeconds > 518400;
+        return $this->diffInSeconds >= 604800;
     }
 
     /**
