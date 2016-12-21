@@ -108,7 +108,7 @@ class Parser
      */
     protected function isMoreThanSixDays()
     {
-        return $this->diffInSeconds >= 518400;
+        return $this->diffInSeconds > 518400;
     }
 
     /**
