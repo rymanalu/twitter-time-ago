@@ -1,0 +1,27 @@
+{
+    "name": "rymanalu/twitter-time-ago",
+    "description": "Displays the date in a \"time ago\" format like Twitter.",
+    "keywords": ["twitter", "time ago"],
+    "type": "library",
+    "require": {
+        "php": ">=5.3.3",
+        "nesbot/carbon": "~1.18"
+    },
+    "require-dev": {
+        "mockery/mockery": "~0.9",
+        "phpunit/phpunit": "~4.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roni Yusuf Manalu",
+            "email": "rymanalu@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rymanalu\\TwitterTimeAgo\\": "src/"
+        }
+    },
+    "homepage": "https://github.com/rymanalu/twitter-time-ago"
+}
