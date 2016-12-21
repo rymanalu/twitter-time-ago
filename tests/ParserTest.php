@@ -53,6 +53,12 @@ class ParserTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('59s', $instance->parse());
     }
 
+    /** @test */
+    public function it_parses_properly_using_helper()
+    {
+        $this->assertEquals('2m', twitter_time_ago(Carbon::now()->subSeconds(120)));
+    }
+
     protected function createInstance(Carbon $time)
     {
         return new Parser($time);
