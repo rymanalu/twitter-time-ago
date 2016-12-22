@@ -130,7 +130,7 @@ class Parser
     protected function setDifference($time)
     {
         $this->diffInSeconds = Carbon::now($this->timezone)->diffInSeconds(
-            $time instanceof Carbon ? $time : $this->freshCarbon($time)
+            $time instanceof Carbon ? $time : new Carbon($time, $this->timezone)
         );
     }
 
